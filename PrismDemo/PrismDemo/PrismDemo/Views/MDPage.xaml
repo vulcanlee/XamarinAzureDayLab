@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="PrismDemo.Views.MDPage">
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="面板">
+            <StackLayout
+                VerticalOptions="Center"
+                Orientation="Vertical">
+                <Button Text="首頁" Command="{Binding HomeCommand}"/>
+                <Button Text="P1" Command="{Binding P1Command}"/>
+                <Button Text="P2" Command="{Binding P2Command}" />
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+  
+</MasterDetailPage>
